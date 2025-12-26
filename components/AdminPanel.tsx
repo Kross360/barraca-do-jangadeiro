@@ -176,23 +176,43 @@ const AdminPanel: React.FC<AdminPanelProps> = ({
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">WhatsApp</label>
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">WhatsApp (Número puro)</label>
                   <input 
                     type="text" 
                     value={settingsForm.whatsapp}
                     onChange={e => setSettingsForm({...settingsForm, whatsapp: e.target.value})}
+                    placeholder="5585999999999"
                     className="w-full p-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-slate-100 font-medium focus:bg-white dark:focus:bg-slate-700 focus:ring-4 focus:ring-jangadeiro-blue/20 focus:border-jangadeiro-blue outline-none transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">Instagram (@)</label>
+                  <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">WhatsApp (Exibição)</label>
                   <input 
                     type="text" 
-                    value={settingsForm.instagram}
-                    onChange={e => setSettingsForm({...settingsForm, instagram: e.target.value})}
+                    value={settingsForm.whatsappDisplay}
+                    onChange={e => setSettingsForm({...settingsForm, whatsappDisplay: e.target.value})}
+                    placeholder="(85) 99999-9999"
                     className="w-full p-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-slate-100 font-medium focus:bg-white dark:focus:bg-slate-700 focus:ring-4 focus:ring-jangadeiro-blue/20 focus:border-jangadeiro-blue outline-none transition-all"
                   />
                 </div>
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">Instagram (@)</label>
+                <input 
+                  type="text" 
+                  value={settingsForm.instagram}
+                  onChange={e => setSettingsForm({...settingsForm, instagram: e.target.value})}
+                  className="w-full p-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-slate-100 font-medium focus:bg-white dark:focus:bg-slate-700 focus:ring-4 focus:ring-jangadeiro-blue/20 focus:border-jangadeiro-blue outline-none transition-all"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">Horário de Funcionamento</label>
+                <input 
+                  type="text" 
+                  value={settingsForm.businessHours}
+                  onChange={e => setSettingsForm({...settingsForm, businessHours: e.target.value})}
+                  className="w-full p-3 bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded-lg text-slate-900 dark:text-slate-100 font-medium focus:bg-white dark:focus:bg-slate-700 focus:ring-4 focus:ring-jangadeiro-blue/20 focus:border-jangadeiro-blue outline-none transition-all"
+                />
               </div>
               <div>
                 <label className="block text-sm font-semibold text-gray-700 dark:text-slate-300 mb-1">Endereço Completo</label>

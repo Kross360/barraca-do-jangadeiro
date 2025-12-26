@@ -1,3 +1,4 @@
+
 import { MenuItem, AppSettings } from '../types';
 
 const MENU_KEY = 'jangadeiro_menu';
@@ -64,8 +65,10 @@ const DEFAULT_SETTINGS: AppSettings = {
   heroTitle: 'Barraca do Jangadeiro',
   heroSubtitle: 'Conforto, sabor e vista para o mar.',
   whatsapp: '5585999999999',
+  whatsappDisplay: '(85) 99999-9999',
   instagram: 'barracadojangadeiro',
   address: 'Av. Zezé Diogo, 1234 - Praia do Futuro, Fortaleza - CE',
+  businessHours: 'Todos os dias: 08:00 às 18:00',
   locationLat: -3.7388,
   locationLng: -38.4633
 };

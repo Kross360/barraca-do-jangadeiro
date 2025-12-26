@@ -1,3 +1,4 @@
+
 export type Category = 'bebidas' | 'comidas';
 
 export interface MenuItem {
@@ -14,10 +15,12 @@ export interface AppSettings {
   heroTitle: string;
   heroSubtitle: string;
   whatsapp: string;
+  whatsappDisplay: string; // Versão formatada para exibição (ex: (85) 99999-9999)
   instagram: string;
   address: string;
-  locationLat: number; // For Maps Grounding context
-  locationLng: number; // For Maps Grounding context
+  businessHours: string; // Ex: Segunda a Sexta: 08h - 18h
+  locationLat: number; 
+  locationLng: number; 
 }
 
 export interface ChatMessage {
