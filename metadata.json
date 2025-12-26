@@ -1,5 +1,7 @@
 {
   "name": "Barraca do Jangadeiro",
-  "description": "A modern, minimalist website for a beach shack featuring a digital menu, contact info, and an admin panel for content management.",
-  "requestFramePermissions": []
+  "description": "Website moderno e minimalista para barraca de praia com cardápio digital e assistente IA.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
 }

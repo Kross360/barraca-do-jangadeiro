@@ -1,4 +1,4 @@
-export type Category = 'Bebidas' | 'Comidas' | 'Petiscos' | 'Pratos Regionais';
+export type Category = 'bebidas' | 'comidas';
 
 export interface MenuItem {
   id: string;
@@ -7,20 +7,21 @@ export interface MenuItem {
   price: number;
   category: Category;
   image?: string;
+  available: boolean;
 }
 
-export interface SiteSettings {
+export interface AppSettings {
   heroTitle: string;
   heroSubtitle: string;
   whatsapp: string;
   instagram: string;
   address: string;
-  mapsUrl: string;
-  openingHours: string;
+  locationLat: number; // For Maps Grounding context
+  locationLng: number; // For Maps Grounding context
 }
 
-export interface User {
-  id: string;
-  email: string;
-  name: string;
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+  sources?: { uri: string; title: string }[];
 }
